@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tanicerdas">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_growtani"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_growtani"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TaniCerdas"
+        android:name=".FireApp">
+        <activity
+            android:name=".dashboard_main"
+            android:exported="false" />
+        <activity
+            android:name=".Sub_Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
